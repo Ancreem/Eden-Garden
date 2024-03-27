@@ -10,7 +10,6 @@ export function getOrnamentalProductsInStock() {
     .then(response => response.json())
     .then(data => {
         const productCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Ornamental Products in Stock";
         const statement = document.querySelector('#statement').textContent = "Returns a list with all products belonging to the Ornamental range and having more than 100 units in stock. The list should be ordered by their sale price, showing the highest-priced products first.";
 
         let html = '';
@@ -47,7 +46,6 @@ export function getProductsAreNotInAnyOrder() {
     .then(response => response.json())
     .then(data => {
         const productsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Products Not in Any Order";
         const statement = document.querySelector('#statement').textContent = "Returns a list of products that have never appeared in any order.";
 
         let html = '';
@@ -84,7 +82,6 @@ export function getProductsAreNotInAnyOrderNDI() {
     .then(response => response.json())
     .then(data => {
         const productCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Products Not In Any Order";
         const statement = document.querySelector('#statement').textContent = "Returns a list of products that have never appeared in any order.";
 
         let html = '';
@@ -126,7 +123,6 @@ export function findMaxAndMinPrice() {
         const minPrice = data[0][1];
 
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Max and Min Price of Products";
         const statement = document.querySelector('#statement').textContent = "Displays the sale price of the most expensive and cheapest product.";
 
         const html = `

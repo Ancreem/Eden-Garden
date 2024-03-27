@@ -12,7 +12,6 @@ export function spanishCustomers() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Spanish Customers";
         const point = document.querySelector('#point').textContent = "Spanish Customers";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the name of all Spanish customers.";
 
@@ -48,7 +47,6 @@ export function madridSalesRep11To30() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Madrid Customers with Sales Rep 11 or 30";
         const point = document.querySelector('#point').textContent = "Madrid Customers with Sales Rep 11 or 30";
         const statement = document.querySelector('#statement').textContent = "Returns a list with all customers in Madrid whose sales representative has an employee code of 11 or 30.";
 
@@ -83,7 +81,6 @@ export function customerSalesRep() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers with Sales Representatives";
         const point = document.querySelector('#point').textContent = "Customers with Sales Representatives";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the name of each customer and the name and last name of their sales representative.";
 
@@ -122,7 +119,6 @@ export function customersWithPayments() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers with Payments and Sales Rep";
         const point = document.querySelector('#point').textContent = "Customers with Payments and Sales Rep";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the name of each customer and the name and last name of their sales representative.";
 
@@ -161,7 +157,6 @@ export function customersWithoutPayments() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers without Payments and their Sales Reps";
         const point = document.querySelector('#point').textContent = "Customers without Payments and their Sales Reps";
         const statement = document.querySelector('#statement').textContent = "Returns the name of the customers who have not made payments along with the name of their sales representatives.";
 
@@ -202,7 +197,6 @@ export function customersWithPaymentsRepCity() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers with Payments, Sales Rep and Office City";
         const point = document.querySelector('#point').textContent = "Customers with Payments, Sales Rep and Office City";
         const statement = document.querySelector('#statement').textContent = "Returns the name of customers who have made payments along with the name and last name of their sales representatives and the city of the office to which the representative belongs.";
 
@@ -243,7 +237,6 @@ export function withoutPayments() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers without Payments";
         const point = document.querySelector('#point').textContent = "Customers without Payments";
         const statement = document.querySelector('#statement').textContent = "Returns the names of customers who have not made payments, along with the name of their representatives and the city of the office to which the representative belongs.";
 
@@ -284,7 +277,6 @@ export function distinctCustomerRepresentativeOffice() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Distinct Customer Representative Office";
         const point = document.querySelector('#point').textContent = "Distinct Customer Representative Office";
         const statement = document.querySelector('#statement').textContent = "Returns the name of customers and the name of their representatives along with the city of the representative's office.";
 
@@ -325,7 +317,6 @@ export function customersDoNotPayAnyOrders() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers with No Payments or Orders";
         const point = document.querySelector('#point').textContent = "Customers with No Payments or Orders";
         const statement = document.querySelector('#statement').textContent = "Returns a list of customers who have not made any payments or orders.";
 
@@ -360,7 +351,6 @@ export function findCustomersWithOrdersButNoPayments() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers with Orders but No Payments";
         const point = document.querySelector('#point').textContent = "Customers with Orders but No Payments";
         const statement = document.querySelector('#statement').textContent = "Returns a list of customers who have made orders but have not made any payments.";
 
@@ -395,7 +385,6 @@ export function countCustomersByCountry() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers by Country";
         const point = document.querySelector('#point').textContent = "Customers by Country";
         const statement = document.querySelector('#statement').textContent = "Returns the number of customers for each country.";
   
@@ -432,7 +421,6 @@ export function countCustomersByCountry() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Total Customers";
         const point = document.querySelector('#point').textContent = "Total Customers";
         const statement = document.querySelector('#statement').textContent = "Returns the total number of customers.";
   
@@ -465,7 +453,6 @@ export function countCustomersByCountry() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers in Madrid";
         const point = document.querySelector('#point').textContent = "Customers in Madrid";
         const statement = document.querySelector('#statement').textContent = "Returns the number of customers with residence in the city of Madrid.";
   
@@ -498,7 +485,6 @@ export function countCustomersByCityStartingWithM() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers by City Starting with M";
         const point = document.querySelector('#point').textContent = "Customers by City Starting with M";
         const statement = document.querySelector('#statement').textContent = "Returns the number of customers in each city that starts with 'M'.";
 
@@ -537,7 +523,6 @@ export function countCustomersWithNoSalesRepresentative() {
     .then(response => response.json())
     .then(count => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers with No Sales Representative";
         const point = document.querySelector('#point').textContent = "Customers with No Sales Representative";
         const statement = document.querySelector('#statement').textContent = "Returns the number of customers without a sales representative.";
 
@@ -567,7 +552,6 @@ export function findMinMaxPaymentDatesByCustomer() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Min-Max Payment Dates by Customer";
         const point = document.querySelector('#point').textContent = "Min-Max Payment Dates by Customer";
         const statement = document.querySelector('#statement').textContent = "Returns the first and last payment dates for each customer.";
 

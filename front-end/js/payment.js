@@ -10,7 +10,6 @@ export function customerCodesWithPaymentsIn2008() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customer Codes with Payments in 2008";
         const point = document.querySelector('#point').textContent = "Customer Codes with Payments in 2008";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the customer codes of customers who made payments in 2008.";
 
@@ -50,7 +49,6 @@ export function paypalPaymentsIn2008OrderByTotalDesc() {
     })
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Paypal Payments in 2008";
         const point = document.querySelector('#point').textContent = "Paypal Payments in 2008";
         const statement = document.querySelector('#statement').textContent = "Returns a list with all payments made in 2008 via Paypal, ordered from highest to lowest.";
 
@@ -86,7 +84,6 @@ export function distinctPaymentMethods() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Distinct Payment Methods";
         const point = document.querySelector('#point').textContent = "Distinct Payment Methods";
         const statement = document.querySelector('#statement').textContent = "Returns a list with all distinct payment methods.";
 
@@ -122,7 +119,6 @@ export function findAveragePaymentTotalForYear2009() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Average Payment Total for 2009";
         const point = document.querySelector('#point').textContent = "Average Payment Total for 2009";
         const statement = document.querySelector('#statement').textContent = "Returns the average payment total for the year 2009.";
 
@@ -156,7 +152,6 @@ export function getTotalPaymentsByYear() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Total Payments by Year";
         const point = document.querySelector('#point').textContent = "Total Payments by Year";
         const statement = document.querySelector('#statement').textContent = "Returns the total sum of payments for each year.";
 

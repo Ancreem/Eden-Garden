@@ -12,7 +12,6 @@ export function employeesByBossId7() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employees";
         const point = document.querySelector('#point').textContent = "Employees";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the first name, last name and email of the employees whose boss has a boss code equal to 7.";
 
@@ -56,7 +55,6 @@ export function getBossOfCompany() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Boss of Company";
         const statement = document.querySelector('#statement').textContent = "Returns the position name, name, last names, and email of the boss of the company.";
 
         let html = '';
@@ -96,7 +94,6 @@ export function findEmployeesNotSalesRepresentatives() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employees Not Sales Representatives";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the name, last names, and position of employees who are not sales representatives.";
 
         let html = '';
@@ -134,7 +131,6 @@ export function findEmployeeAndBossNames() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employee and Boss Names";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the name of the employees along with the name of their bosses.";
 
         let html = '';
@@ -170,7 +166,6 @@ export function getAllEmployeesWithBossAndGrandBoss() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employees with Boss and Grandboss";
         const statement = document.querySelector('#statement').textContent = "Returns a list showing the name of each employee, the name of their boss, and the name of their boss's boss.";
 
         let html = '';
@@ -208,7 +203,6 @@ export function getEmployeesNotAssociatedOffice() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employees Not Associated with an Office";
         const statement = document.querySelector('#statement').textContent = "Returns a list of employees who are not associated with any office.";
 
         let html = '';
@@ -248,7 +242,6 @@ export function getNonClientOfficeEmployeesWork() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Non-Client Office Employees";
         const statement = document.querySelector('#statement').textContent = "Returns a list of employees who do not have an associated client along with the data of the office where they work.";
 
         let html = '';
@@ -293,7 +286,6 @@ export function getEmployeesDoNotHaveClients() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employees without Clients";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the names of employees who do not have associated clients.";
 
         let html = '';
@@ -328,7 +320,6 @@ export function getEmployeesNotAssociatedOfficeAndNotClient() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employees without Office and Clients";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the names of employees who do not have an associated office or clients.";
 
         let html = '';
@@ -363,7 +354,6 @@ export function findEmployeesWithoutCustomers() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employees without Customers and their Boss";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the names of employees who do not have associated customers and the name of their boss.";
 
         let html = '';
@@ -399,7 +389,6 @@ export function countEmployees() {
     .then(response => response.json())
     .then(count => {
         const countContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Employee Count";
         const statement = document.querySelector('#statement').textContent = "Displays the total number of employees in the company.";
 
         countContainer.innerHTML = `
@@ -431,7 +420,6 @@ export function countCustomersByEmployee() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Sales Representatives and Number of Customers";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the name of the sales representatives and the number of customers each one serves.";
 
         let html = '';

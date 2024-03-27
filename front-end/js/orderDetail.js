@@ -10,7 +10,6 @@ export function countDistinctProductsByOrder() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data'); // Contenedor HTML
-        const title = document.querySelector('.title').textContent = "Distinct Products by Order"; // Título
         const point = document.querySelector('#point').textContent = "Distinct Products by Order"; // Punto de la consulta
         const statement = document.querySelector('#statement').textContent = "Returns the number of different products in each order."; // Descripción de la consulta
         
@@ -47,7 +46,6 @@ export function sumQuantityByOrder() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data'); // Contenedor HTML
-        const title = document.querySelector('.title').textContent = "Total Quantity by Order"; // Título
         const point = document.querySelector('#point').textContent = "Total Quantity by Order"; // Punto de la consulta
         const statement = document.querySelector('#statement').textContent = "Returns the total quantity of all products in each order."; // Descripción de la consulta
         
@@ -85,7 +83,6 @@ export function findTop20ProductsByTotalSold() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data'); // Contenedor HTML
-        const title = document.querySelector('.title').textContent = "Top 20 Sold Products"; // Título
         const point = document.querySelector('#point').textContent = "Top 20 Sold Products"; // Punto de la consulta
         const statement = document.querySelector('#statement').textContent = "Returns the top 20 products sold and the total number of units sold for each one. The list is ordered by the total number of units sold."; // Descripción de la consulta
         
@@ -123,7 +120,6 @@ export function calculateInvoiceTotals() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data'); // Contenedor HTML
-        const title = document.querySelector('.title').textContent = "Invoice Totals"; // Título
         const point = document.querySelector('#point').textContent = "Invoice Totals"; // Punto de la consulta
         const statement = document.querySelector('#statement').textContent = "Returns the total billing of the company throughout its history, indicating the taxable base, the VAT, and the total invoiced."; // Descripción de la consulta
         
@@ -165,7 +161,6 @@ export function calculateProductInvoiceTotals() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data'); // Contenedor HTML
-        const title = document.querySelector('.title').textContent = "Product Invoice Totals"; // Título
         const point = document.querySelector('#point').textContent = "Product Invoice Totals"; // Punto de la consulta
         const statement = document.querySelector('#statement').textContent = "Returns the billing information grouped by product code, indicating the taxable base, the VAT, and the total invoiced."; // Descripción de la consulta
         
@@ -208,7 +203,6 @@ export function calculateTotalByProductStartingWithOR() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data'); // Contenedor HTML
-        const title = document.querySelector('.title').textContent = "Product Invoice Totals (Starting with 'OR')"; // Título
         const point = document.querySelector('#point').textContent = "Product Invoice Totals (Starting with 'OR')"; // Punto de la consulta
         const statement = document.querySelector('#statement').textContent = "Returns the billing information grouped by product code, filtered by codes starting with 'OR', indicating the taxable base, the VAT, and the total invoiced."; // Descripción de la consulta
         
@@ -250,7 +244,6 @@ export function calculateTotalByProduct() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data'); // Contenedor HTML
-        const title = document.querySelector('.title').textContent = "Total Sales by Product"; // Título
         const point = document.querySelector('#point').textContent = "Total Sales by Product"; // Punto de la consulta
         const statement = document.querySelector('#statement').textContent = "Lists the total sales of products that have billed more than 3000 euros. It shows the product name, units sold, total revenue, and total revenue with taxes (21% VAT)."; // Descripción de la consulta
         

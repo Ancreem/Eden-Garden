@@ -10,7 +10,6 @@ export function getDistinctOrderStatus() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Distinct Order Status";
         const point = document.querySelector('#point').textContent = "Distinct Order Status";
         const statement = document.querySelector('#statement').textContent = "Returns a list with distinct order statuses.";
 
@@ -44,7 +43,6 @@ export function getDelayedOrders() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Delayed Orders";
         const point = document.querySelector('#point').textContent = "Delayed Orders";
         const statement = document.querySelector('#statement').textContent = "Returns a list with order details for delayed orders.";
 
@@ -87,7 +85,6 @@ export function findOrdersWithLateDelivery() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Orders with Late Delivery";
         const point = document.querySelector('#point').textContent = "Orders with Late Delivery";
         const statement = document.querySelector('#statement').textContent = "Returns a list with order details for orders with late delivery.";
 
@@ -131,7 +128,6 @@ export function findRejectedOrdersIn2009() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Rejected Orders in 2009";
         const point = document.querySelector('#point').textContent = "Rejected Orders in 2009";
         const statement = document.querySelector('#statement').textContent = "Returns a list of all orders that were rejected in 2009.";
 
@@ -181,7 +177,6 @@ export function findOrdersDeliveredInJanuary() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Orders Delivered in January";
         const point = document.querySelector('#point').textContent = "Orders Delivered in January";
         const statement = document.querySelector('#statement').textContent = "Returns a list of all orders that were delivered in January of any year.";
 
@@ -230,7 +225,6 @@ export function countOrderByStatus() {
     .then(response => response.json())
     .then(data => {
         const ordersContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Orders Count by Status";
         const point = document.querySelector('#point').textContent = "Orders Count by Status";
         const statement = document.querySelector('#statement').textContent = "Returns a count of orders grouped by status.";
 

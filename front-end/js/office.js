@@ -10,7 +10,6 @@ export function getOfficeCodeAndCity() {
     .then(response => response.json())
     .then(data => {
         const officeCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Office Code and City";
         const point = document.querySelector('#point').textContent = "Office Code and City";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the office code and city where there are offices.";
 
@@ -48,7 +47,6 @@ export function getCityAndPhoneInSpain() {
     .then(response => response.json())
     .then(data => {
         const officeCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "City and Phone in Spain";
         const point = document.querySelector('#point').textContent = "City and Phone in Spain";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the city and phone of the offices in Spain.";
 
@@ -88,7 +86,6 @@ export function findCustomersWithPaymentsAndTheirSalesRepAndOfficeCity() {
     .then(response => response.json())
     .then(data => {
         const clientCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Customers with Payments and their Sales Reps and Office City";
         const point = document.querySelector('#point').textContent = "Customers with Payments and their Sales Reps and Office City";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the name of customers who have made payments, the name of their sales representatives, and the city of the office to which the representative belongs.";
 
@@ -129,7 +126,6 @@ export function findOfficeAddressesInFuenlabrada() {
     .then(response => response.json())
     .then(data => {
         const officeCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Office Addresses in Fuenlabrada";
         const point = document.querySelector('#point').textContent = "Office Addresses in Fuenlabrada";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the addresses of all offices in Fuenlabrada.";
 
@@ -164,7 +160,6 @@ export function getOfficesNotEmployeesHaveClientWithGamaFrutales() {
     .then(response => response.json())
     .then(data => {
         const officeCardsContainer = document.querySelector('.info-data');
-        const title = document.querySelector('.title').textContent = "Offices without Employees with Clients with Gama Frutales";
         const point = document.querySelector('#point').textContent = "Offices without Employees with Clients with Gama Frutales";
         const statement = document.querySelector('#statement').textContent = "Returns a list with the office codes of all offices where there are no employees who have clients with products of the Gama Frutales.";
 
